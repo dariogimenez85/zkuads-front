@@ -1,0 +1,75 @@
+@import "./../abstract/variables.scss";
+
+.bg-login{
+    background-image: url(/src/assets/png/backgrounds/bg_welcome_login.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+.login-logo-box{
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-logo{
+    width: 80%;
+    max-width: 320px;
+}
+
+// LOGIN-WELCOME BUTTONS
+.login-buttons-box{
+    width: 100%;
+}
+.login-button:not(:last-child){
+    margin-bottom: 1rem;
+}
+.login-button{
+    text-decoration: none;
+    width: 100%;
+    height: 30%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+.login-button__text{
+    flex: 1 1 80%;
+    font-size: 1.8rem;
+    font-family: "Quicksand semibold";
+    text-align: center;
+}
+.login-button img{
+    display: block;
+    margin-left: 1rem;
+}
+// LOGIN-WELCOME BUTTONS
+
+// LOGIN NEW ACCOUNT
+.login-back-icon{
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+.login-have-account{
+    display: block;
+    text-align: right;
+    width: 100%;
+    color: rgb(224, 224, 224);
+    font-size: 1.8rem;
+    font-family: "Quicksand Medium";
+
+    a{
+        text-decoration: none;
+        font-family: "Quicksand bold";
+        color: #fff;
+    }
+}
+// LOGIN NEW ACCOUNT

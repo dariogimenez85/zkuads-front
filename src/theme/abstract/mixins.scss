@@ -1,0 +1,9 @@
+@mixin bg-yellow-pink(){
+    background-image: linear-gradient(to right #ffbf2a, #ff375f);
+}
+@mixin bg-orange-yellow(){
+    background-image: linear-gradient(to right #ff6424, #ffc824);
+}
+@mixin bg-pink-purple(){
+    background-image: linear-gradient(to right #e9345b, #951b81);
+}

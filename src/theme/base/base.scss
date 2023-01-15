@@ -1,0 +1,32 @@
+html{
+    @media screen and (min-width: 0px) {
+    font-size: 56.25%;
+    }
+    @media screen and (min-width: 280px) {
+    font-size: 62.5%;
+    }
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body{
+    box-sizing: border-box;
+    height: 100%;
+}
+body::-webkit-scrollbar{ 
+    display: none;
+}
+.portrait-container{
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    min-height: 600px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}

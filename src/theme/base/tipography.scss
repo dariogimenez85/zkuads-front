@@ -1,0 +1,58 @@
+@import "./../abstract/variables.scss";
+
+@font-face {
+    font-family: "Quicksand Light";
+    font-weight: 300;
+    src: url("./src/assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Quicksand Regular";
+    font-weight: 400;
+    src: url("./src/assets/fonts/Quicksand/Quicksand-Regular.ttf");
+}
+@font-face {
+    font-family: "Quicksand Medium";
+    font-weight: 600;
+    src: url("./src/assets/fonts/Quicksand/Quicksand-Medium.ttf");
+}
+@font-face {
+    font-family: "Quicksand Semibold";
+    font-weight: 700;
+    src: url("./src/assets/fonts/Quicksand/Quicksand-SemiBold.ttf");
+}
+@font-face {
+    font-family: "Quicksand Bold";
+    font-weight: 900;
+    src: url("./src/assets/fonts/Quicksand/Quicksand-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Russo One";
+    font-weight: 400;
+    src: url('/src/assets/fonts/Russo_One/RussoOne-Regular.ttf');
+}
+
+// HEADINGS
+.heading{
+    font-family: "Russo One";
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    &__1{
+        font-size: 3rem;
+        color: $color-white;
+    }
+    &__2{
+        font-size: 1.6rem;
+        color: $color-white;
+        text-shadow: 4px 3px 2px rgba(20, 20, 20, 0.795);
+        margin: 2.5rem 0;
+    }
+    &__3{
+        font-size: 1.8rem;
+        color: $color-light-yellow;
+        margin: 1.5rem 0;
+    }
+}

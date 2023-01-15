@@ -1,0 +1,53 @@
+@import "./../abstract/variables.scss";
+
+// BACKGROUND COLORS
+.bg-purple{
+    background-color: $color-purple;
+}
+.bg-white{
+    background-color: $color-white;
+}
+.bg-blue{
+    background-color: $color-blue;
+}
+.bg-orange{
+    background-color: #c85426;
+}
+.bg-orange-blur{
+    background-color: #c85426cb;
+}
+.bg-purple-blur{
+    background-color: #701b62d3;
+}
+.bg-tournament{
+    background-image: linear-gradient(to right, #e9345b, #951b81);
+}
+
+.disabled{
+    opacity: .6 !important;
+}
+
+// DISPLAY
+
+.d-none{
+    display: none !important;
+}
+
+// COLORS
+
+.c-white{
+    color: #fff;
+}
+.c-gray{
+    color: $color-font-gray-1;
+}
+.c-black{
+    color: #000;
+}
+
+// MARGINS
+
+.m-auto-center{margin: 0 auto;}
+
+.mr-auto{margin-right: auto;}
+
