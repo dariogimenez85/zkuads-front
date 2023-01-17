@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div className="portrait-container">
             <div className="bg-dark">
-                <Header />
+                <Header showBackButton={false} />
                 <TournamentSlider />
                 <DailyQuest />
                 <GameList />

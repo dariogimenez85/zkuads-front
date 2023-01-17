@@ -1,0 +1,9 @@
+{
+    "name": "Leo M",
+    "pic": "https://avatarfiles.alphacoders.com/244/244597.jpg",
+    "balance": {
+        "z_coin": 150,
+        "diamond": 10000,
+        "pow_coin": 1050
+    }
+}

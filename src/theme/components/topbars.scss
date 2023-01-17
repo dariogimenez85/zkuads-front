@@ -10,13 +10,17 @@
     margin-bottom: 2rem;
 
     &__back{
+        border: 0px;
+        cursor: pointer;
         margin-right: 10px;
+        background-color: transparent;
 
         &--img{
             width: 2.5rem;
         }
     }
     &__switch-btn{
+        cursor: pointer;
         display: inline-block;
         &--img{
             height: 2.5rem;
@@ -63,6 +67,7 @@
 
         &--img{
             width: 100%;
+            border-radius: 50%;
         }
     }
 }
