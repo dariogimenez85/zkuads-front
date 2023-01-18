@@ -2,41 +2,51 @@ import React from 'react'
 
 const DailyQuest = () => {
     return (
-        <div className="daily-quest">
-            <div className="daily-quest__top-box">
-                <div className="daily-quest__top-box--bonus">
-                    <img src="/src/assets/svg/icon_diamond.svg" alt="diamond" />
+        <div className='daily-quest__container'>
+        <div className='daily-quest'>
+            <div className='daily-quest__top-box'>
+                <div className='daily-quest__top-box--bonus'>
+                    <img src='./assets/img/assets/svg/icon_diamond.svg' alt='diamond' />
                     <span>10</span>
                 </div>
-                <div className="daily-quest__top-box--title">
-                    <h3 className="heading heading__3">daily quest</h3>
+                <div className='daily-quest__top-box--title'>
+                    <h3 className='heading heading__3'>daily quest</h3>
                 </div>
-                <div className="daily-quest__top-box--time">
+                <div className='daily-quest__top-box--time'>
                     <span>00</span>:
                     <span>15</span>:
                     <span>40</span>
                 </div>
             </div>
-            <div className="daily-quest__bottom-box">
-                <div className="daily-quest__bottom-box--tournament bg-tournament">
-                    <div className="daily-quest__bottom-box--tournament-text">
+            <div className='daily-quest__bottom-box'>
+                <div className='daily-quest__bottom-box--tournament bg-tournament'>
+                    <div className='daily-quest__bottom-box--tournament-text'>
                         play a <br />
                         tournament
                     </div>
-                    <div className="daily-quest__bottom-box--tournament-bar">
+                    <div className='daily-quest__bottom-box--tournament-bar'>
                         <span>0/1</span>
-                        <span></span>
+                        <span className='daily-quest__bottom-box--tournament-gray-bar'>
+                            <span className='daily-quest__bottom-box--tournament-yellow-bar width-bar__play-a-tournament'>
+                                {/* <!-- class width-bar define bar progress - it is on utilities classes --> */}
+                            </span>
+                        </span>
                     </div>
                 </div>
-                <div className="daily-quest__bottom-box--tournament bg-tournament">
-                    <div className="daily-quest__bottom-box--tournament-text">win 3 <br />tournament</div>
-                    <div className="daily-quest__bottom-box--tournament-bar">
+                <div className='daily-quest__bottom-box--tournament bg-tournament'>
+                    <div className='daily-quest__bottom-box--tournament-text'>win 3 <br />tournament</div>
+                    <div className='daily-quest__bottom-box--tournament-bar'>
                         <span>3/3</span>
-                        <span></span>
+                        <span className='daily-quest__bottom-box--tournament-gray-bar'>
+                            <span className='daily-quest__bottom-box--tournament-yellow-bar width-bar__win-three-tournament'>
+                                {/* <!-- class width-bar define bar progress - it is on utilities classes --> */}
+                            </span>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     )
 }
 

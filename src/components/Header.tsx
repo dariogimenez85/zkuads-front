@@ -23,13 +23,15 @@ const Header = ({ showBackButton }: { showBackButton: boolean }) => {
     }
 
     return (
-        <div className={`topbar ${bgStyle}`}>
-            <BackButton show={showBackButton} />
-            <CoinSwitch hardCurrency={hardCurrency} toggleCallback={toggleCurrency} />
-            <SelectedCoinBalance hardCurrency={hardCurrency} balance={userData.balance} />
-            <PowCoinBalance balance={userData.balance.pow_coin} />
-            <UserPic path={userData.pic} />
-        </div >
+        <div className='topbar__container'>
+            <div className={`topbar ${bgStyle}`}>
+                <BackButton show={showBackButton} />
+                <CoinSwitch hardCurrency={hardCurrency} toggleCallback={toggleCurrency} />
+                <SelectedCoinBalance hardCurrency={hardCurrency} balance={userData.balance} />
+                <PowCoinBalance balance={userData.balance.pow_coin} />
+                <UserPic path={userData.pic} />
+            </div>
+        </div>
     )
 }
 

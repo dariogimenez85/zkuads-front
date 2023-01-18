@@ -7,9 +7,6 @@
 .bg-white{
     background-color: $color-white;
 }
-.bg-red{
-    background-color: $color-red;
-}
 .bg-blue{
     background-color: $color-blue;
 }
@@ -54,3 +51,9 @@
 
 .mr-auto{margin-right: auto;}
 
+
+// bar progress utilities classes
+.width-bar{
+    &__play-a-tournament{width: 5%;}
+    &__win-three-tournament{width: 100%;}
+}
