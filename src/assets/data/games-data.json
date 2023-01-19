@@ -1,0 +1,208 @@
+{
+    "games": [
+        {
+            "name": "Fruit Finder",
+            "thumbnail": "fruitfinder.png",
+            "header_pic": "fruitfinder.png",
+            "bets": [
+                1,
+                100
+            ],
+            "boosters": [
+                {
+                    "name": "Extra Time",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed magna gravida, laoreet urna sed, tristique tortor",
+                    "pic": "icon_booster_bonusTime.png",
+                    "price": 100,
+                    "user_quantity": "2"
+                },
+                {
+                    "name": "Double Points",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed magna gravida, laoreet urna sed, tristique tortor",
+                    "pic": "icon_booster_doublex.png",
+                    "price": 100,
+                    "user_quantity": "2"
+                },
+                {
+                    "name": "Gather",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed magna gravida, laoreet urna sed, tristique tortor",
+                    "pic": "icon_booster_gather.png",
+                    "price": 100,
+                    "user_quantity": "2"
+                }
+            ],
+            "achievements": [
+                {
+                    "name": "",
+                    "description": "",
+                    "prize": "",
+                    "status": ""
+                }
+            ],
+            "leaderboard": {
+                "user_position": "",
+                "score": "",
+                "list": [
+                    {
+                        "name": "",
+                        "score": "",
+                        "position": ""
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Tricky Bricks",
+            "thumbnail": "trickybricks.png",
+            "header_pic": "trickybricks.png",
+            "bets": [
+                1,
+                100
+            ],
+            "boosters": [
+                {
+                    "name": "Extra Time",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed magna gravida, laoreet urna sed, tristique tortor",
+                    "pic": "icon_booster_bonusTime.png",
+                    "price": 100,
+                    "user_quantity": "2"
+                },
+                {
+                    "name": "Double Points",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed magna gravida, laoreet urna sed, tristique tortor",
+                    "pic": "icon_booster_doublex.png",
+                    "price": 100,
+                    "user_quantity": "2"
+                },
+                {
+                    "name": "Gather",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed magna gravida, laoreet urna sed, tristique tortor",
+                    "pic": "icon_booster_gather.png",
+                    "price": 100,
+                    "user_quantity": "2"
+                }
+            ],
+            "achievements": [
+                {
+                    "name": "",
+                    "description": "",
+                    "prize": "",
+                    "status": ""
+                }
+            ],
+            "leaderboard": {
+                "user_position": "",
+                "score": "",
+                "list": [
+                    {
+                        "name": "",
+                        "score": "",
+                        "position": ""
+                    }
+                ]
+            }
+        },
+        {
+            "name": "21 Blackjack",
+            "thumbnail": "21blackjack.png",
+            "header_pic": "21blackjack.png",
+            "bets": [
+                1,
+                100
+            ],
+            "boosters": [
+                {
+                    "name": "Extra Time",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed magna gravida, laoreet urna sed, tristique tortor",
+                    "pic": "icon_booster_bonusTime.png",
+                    "price": 100,
+                    "user_quantity": "2"
+                },
+                {
+                    "name": "Double Points",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed magna gravida, laoreet urna sed, tristique tortor",
+                    "pic": "icon_booster_doublex.png",
+                    "price": 100,
+                    "user_quantity": "2"
+                },
+                {
+                    "name": "Gather",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed magna gravida, laoreet urna sed, tristique tortor",
+                    "pic": "icon_booster_gather.png",
+                    "price": 100,
+                    "user_quantity": "2"
+                }
+            ],
+            "achievements": [
+                {
+                    "name": "",
+                    "description": "",
+                    "prize": "",
+                    "status": ""
+                }
+            ],
+            "leaderboard": {
+                "user_position": "",
+                "score": "",
+                "list": [
+                    {
+                        "name": "",
+                        "score": "",
+                        "position": ""
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Gems Blast",
+            "thumbnail": "gemsblast.png",
+            "header_pic": "gemsblast.png",
+            "bets": [
+                1,
+                100
+            ],
+            "boosters": [
+                {
+                    "name": "Extra Time",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed magna gravida, laoreet urna sed, tristique tortor",
+                    "pic": "icon_booster_bonusTime.png",
+                    "price": 100,
+                    "user_quantity": "2"
+                },
+                {
+                    "name": "Double Points",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed magna gravida, laoreet urna sed, tristique tortor",
+                    "pic": "icon_booster_doublex.png",
+                    "price": 100,
+                    "user_quantity": "2"
+                },
+                {
+                    "name": "Gather",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed magna gravida, laoreet urna sed, tristique tortor",
+                    "pic": "icon_booster_gather.png",
+                    "price": 100,
+                    "user_quantity": "2"
+                }
+            ],
+            "achievements": [
+                {
+                    "name": "",
+                    "description": "",
+                    "prize": "",
+                    "status": ""
+                }
+            ],
+            "leaderboard": {
+                "user_position": "",
+                "score": "",
+                "list": [
+                    {
+                        "name": "",
+                        "score": "",
+                        "position": ""
+                    }
+                ]
+            }
+        }
+    ]
+}

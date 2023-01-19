@@ -6,7 +6,7 @@ const DailyQuest = () => {
         <div className='daily-quest'>
             <div className='daily-quest__top-box'>
                 <div className='daily-quest__top-box--bonus'>
-                    <img src='./assets/img/assets/svg/icon_diamond.svg' alt='diamond' />
+                    <img src='/src/assets/svg/icon_diamond.svg' alt='diamond' />
                     <span>10</span>
                 </div>
                 <div className='daily-quest__top-box--title'>

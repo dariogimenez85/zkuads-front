@@ -1,0 +1,32 @@
+{
+    "tournaments": [
+        {
+            "name": "Fruit Finder",
+            "pic": "fruitfinder.png",
+            "end_date": "2023-01-23 23:59",
+            "prize": 10000,
+            "players": 123
+        },
+        {
+            "name": "Tricky Bricks",
+            "pic": "trickybricks.png",
+            "end_date": "2023-01-23 23:59",
+            "prize": 10000,
+            "players": 123
+        },
+        {
+            "name": "21 Blackjack",
+            "pic": "21blackjack.png",
+            "end_date": "2023-01-23 23:59",
+            "prize": 10000,
+            "players": 123
+        },
+        {
+            "name": "Gems Blast",
+            "pic": "gemsblast.png",
+            "end_date": "2023-01-23 23:59",
+            "prize": 10000,
+            "players": 123
+        }
+    ]
+}

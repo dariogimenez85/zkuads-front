@@ -13,7 +13,6 @@ const Header = ({ showBackButton }: { showBackButton: boolean }) => {
     const [bgStyle, setBgStyle] = useState('');
 
     useEffect(() => {
-
         setBgStyle(hardCurrency ? 'bg-orange-blur' : 'bg-purple-blur');
 
     }, [hardCurrency]);
