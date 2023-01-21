@@ -5,29 +5,35 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 0;
     border-radius: 15px;
     box-shadow: -3px 3px 9px rgba(0, 0, 0, 0.6);
+    transition: all 1s ease-out;
+    background-color: #701b62;
 
 
     &__container{
         width: 100%;
         padding: 1rem;
         margin-bottom: 2rem;
+        position: relative;
+        z-index: 999;
     }
 
     &__back{
         margin-right: 10px;
         background: transparent;
         border: 0px;
+        cursor: pointer;
         &--img{
             width: 2.5rem;
         }
     }
     &__switch-btn{
-        display: inline-block;
+        display: flex;
         cursor: pointer;
         &--img{
-            height: 2.5rem;
+            height: 3rem;
         }
     }
     &__cash-mode{
