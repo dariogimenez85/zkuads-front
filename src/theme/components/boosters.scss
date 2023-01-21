@@ -1,0 +1,97 @@
+.boosters{
+    width: 80%;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__item{
+        border: 1px solid #ff6424;
+        border-radius: 7px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1rem 3rem 0px 3rem;
+
+
+        &:not(:last-child){
+            margin-bottom: 4rem;
+        }
+        
+        &--icon{
+            display: inline-block;
+            position: relative;
+            top: -25px;
+            width: 10rem;
+            margin-right: 1rem;
+        }
+        &--text-box{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 2.5rem;
+        }
+        &--title{
+            color: #ffce24;
+            font-size: 1.8rem;
+            font-family: "Quicksand Semibold";
+        }
+        &--description{
+            font-family: "Quicksand Light";
+
+            color: #fff;
+            font-size: 1.4rem;
+        }
+        &--b-icon{
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: 1rem;
+            transform: translateY(-25%);
+        }
+    }
+    &__btn{
+        position: absolute;
+        bottom: 0;
+        transform: translateY(50%);
+        border-radius: 30px;
+        padding: 1rem;
+        width: 90%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+
+        &--text{
+            font-size: 1.8rem;
+            color: #fff;
+            font-family: "Quicksand Bold";
+            text-shadow: -4px 4px 5px rgba(0, 0, 0, 0.7);
+        }
+        &--line{
+            display: inline-block;
+            width: 1px;
+            background-color: #fff;
+            height: 2.2rem;
+            margin: 0 1rem;
+            border-radius: 10px;
+        }
+        &--price{
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            color: #fff;
+            font-family: "Quicksand Semibold";
+            font-size: 1.6rem;
+
+            img{
+                display: inline-block;
+                margin-right: 4px;
+                width: 2rem;
+            }
+        }
+    }
+}

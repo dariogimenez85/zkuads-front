@@ -17,9 +17,9 @@ body{
     box-sizing: border-box;
     height: 100%;
 }
-body::-webkit-scrollbar{ 
-    display: none;
-}
+// body::-webkit-scrollbar{ 
+//     display: inline-block;
+// }
 .portrait-container{
     width: 100%;
     max-width: 500px;

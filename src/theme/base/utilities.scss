@@ -1,25 +1,63 @@
 @import "./../abstract/variables.scss";
 
 // BACKGROUND COLORS
+.bg-dark{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 0rem;
+    background-color: $color-dark-blue;
+    overflow: scroll;
+    position: relative;
+}
+.bg-dark::-webkit-scrollbar{
+    display: none;
+}
+
 .bg-purple{
-    background-color: $color-purple;
+    background-color: $color-purple !important;
 }
 .bg-white{
-    background-color: $color-white;
+    background-color: $color-white !important;
 }
 .bg-blue{
-    background-color: $color-blue;
+    background-color: $color-blue !important;
 }
 .bg-orange{
-    background-color: #c85426;
+    background-color: #c85426 !important;
+}
+.bg-sharp-orange{
+    background-color: #ff6424 !important;
 }
 .bg-orange-blur{
-    background-color: #c85426cb;
+    background-color: #c85426cb !important;
 }
 .bg-purple-blur{
-    background-color: #701b62d3;
+    background-color: #701b62d3 !important;
+}
+.bg-purple-dark{
+    background-color: #321a2f !important;
+}
+.bg-pink{
+    background-color: #ff375f !important;
+}
+.bg-yellow{
+    background-color: #ffbf2a !important;
+}
+.bg-black{
+    background-color: #242424 !important;
 }
 .bg-tournament{
+    background-image: linear-gradient(to right, #e9345b, #951b81);
+}
+.bg-play-coin{
+    background-image: linear-gradient(to right, #ffbf2a 0%, #ff375f 64%);
+}
+.bg-play-diamond{
     background-image: linear-gradient(to right, #e9345b, #951b81);
 }
 
@@ -31,6 +69,12 @@
 
 .d-none{
     display: none !important;
+}
+
+// BORDERS
+
+.border-light-white{
+    border: 1px solid #5f5f5f;
 }
 
 // COLORS
@@ -52,8 +96,21 @@
 .mr-auto{margin-right: auto;}
 
 
-// bar progress utilities classes
+// BAR PROGRESS STYLES
 .width-bar{
     &__play-a-tournament{width: 5%;}
     &__win-three-tournament{width: 100%;}
+    &__achievement-1{width: 5%;}
+    &__achievement-2{width: 60%;}
+    &__achievement-3{width: 100%;}
+}
+
+
+// STATES STYLES
+.order-3{
+    order: 3;
+}
+.rotate-180{
+    transition: all .2s;
+    transform: rotate(180deg);
 }
