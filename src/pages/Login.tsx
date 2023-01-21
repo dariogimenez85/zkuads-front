@@ -2,6 +2,10 @@ import React from 'react'
 
 const Login = () => {
 
+  const loginGoogle = ():void => {
+    window.open('http://localhost:5000/auth/google', '_self');
+  }
+
 
   return (
     <div className="portrait-container">
@@ -10,7 +14,7 @@ const Login = () => {
           <img className="login-logo" src="/src/assets/png/zkuads-logo.png" alt="zkuads-logo" />
         </div>
         <div className="login-buttons-box">
-          <button className="login-button bg-white c-gray">
+          <button className="login-button bg-white c-gray" onClick={loginGoogle}>
             <img width="25px" src="/src/assets/svg/login_icon_gmail.svg" alt="gmail" />
             <div className="login-button__text">
               Continue con Gmail
