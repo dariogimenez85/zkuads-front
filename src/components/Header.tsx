@@ -9,7 +9,7 @@ import UserPic from './header/UserPic'
 const Header = ({ showBackButton }: { showBackButton: boolean }) => {
 
     const userData = useGetUserData();
-    const [hardCurrency, setHardCurrency] = useState(true);
+    const [hardCurrency, setHardCurrency] = useState(false);
     const [bgStyle, setBgStyle] = useState('');
 
     useEffect(() => {

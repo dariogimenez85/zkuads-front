@@ -8,7 +8,8 @@
     padding-top: 0;
     border-radius: 15px;
     box-shadow: -3px 3px 9px rgba(0, 0, 0, 0.6);
-    transition: all 2s ease-in;
+    transition: all 1s ease-out;
+    background-color: #701b62;
 
 
     &__container{
@@ -23,6 +24,7 @@
         margin-right: 10px;
         background: transparent;
         border: 0px;
+        cursor: pointer;
         &--img{
             width: 2.5rem;
         }
@@ -31,7 +33,7 @@
         display: flex;
         cursor: pointer;
         &--img{
-            height: 2.5rem;
+            height: 3rem;
         }
     }
     &__cash-mode{
