@@ -1,11 +1,8 @@
-import { useContext } from "react"
-import { GameContext } from "../context/GameModeContext"
+import { useState } from "react"
+import { GameModeTypes } from "../context/GameModeContext"
 
 export const useGameMode = () => {
 
-    // const [mode, setMode] = useContext(GameContext);
-    // return { mode, setMode };
-
-
-    return null;
+    const [gameMode, setGameMode] = useState(GameModeTypes.FUN);
+    return { gameMode, setGameMode };
 }
