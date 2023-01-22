@@ -1,8 +1,12 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
-const Card = ({ data }: { data: any }) => {
+const GameCard = ({ data }: { data: any }) => {
+
+    const nav = useNavigate();
+    const navigateToGame = () => nav('/game/' + data.id);
     return (
-        <button className="all-games__game">
+        <button className="all-games__game" onClick={navigateToGame}>
             <div className="all-games__game--box">
                 <img src={`/src/assets/png/home_games/${data.thumbnail}`} alt="" />
             </div>
@@ -13,4 +17,4 @@ const Card = ({ data }: { data: any }) => {
     )
 }
 
-export default Card
+export default GameCard

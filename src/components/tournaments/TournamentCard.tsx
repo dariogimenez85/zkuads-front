@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = ({ data }: { data: any }) => {
+const TournamentCard = ({ data }: { data: any }) => {
 
     let date_future = new Date(data.end_date);
     let date_now = new Date();
@@ -44,4 +44,4 @@ const Card = ({ data }: { data: any }) => {
     )
 }
 
-export default Card
+export default TournamentCard

@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { GameContext, GameModeTypes } from '../../context/GameModeContext';
 
-const SelectedCoinBalance = ({ hardCurrency, balance }: { hardCurrency: boolean, balance: any }) => {
+const SelectedCoinBalance = ({ balance }: { balance: any }) => {
 
+    const { gameMode } = useContext(GameContext);
     const [balanceValue, setBalanceValue] = useState(0);
     const [imgType, setImgType] = useState('');
 
     useEffect(() => {
-        setBalanceValue(hardCurrency ? balance.z_coin : balance.diamond);
-        setImgType(hardCurrency ? '/src/assets/svg/icon_coin.svg' : '/src/assets/svg/icon_diamond.svg');
-    }, [hardCurrency]);
+        setBalanceValue(gameMode == GameModeTypes.REAL ? balance.z_coin : balance.diamond);
+        setImgType(gameMode == GameModeTypes.REAL ? '/src/assets/svg/icon_coin.svg' : '/src/assets/svg/icon_diamond.svg');
+    }, [gameMode]);
 
     return (
         <div className="topbar__cash-mode">

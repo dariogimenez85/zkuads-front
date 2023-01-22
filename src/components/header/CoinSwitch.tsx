@@ -1,17 +1,20 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { GameContext, GameModeTypes } from '../../context/GameModeContext';
 
-const CoinSwitch = ({ hardCurrency, toggleCallback }: { hardCurrency: boolean, toggleCallback: Function }) => {
+const CoinSwitch = () => {
 
+    const { gameMode, setGameMode } = useContext(GameContext);
     const [imgType, setImgType] = useState('');
+
 
     useEffect(() => {
 
-        setImgType(hardCurrency ? '/src/assets/svg/header_switch_coins.svg' : '/src/assets/svg/header_switch_diamonds.svg');
+        setImgType(gameMode == GameModeTypes.REAL ? '/src/assets/svg/header_switch_coins.svg' : '/src/assets/svg/header_switch_diamonds.svg');
 
-    }, [hardCurrency]);
+    }, [gameMode]);
 
     const callback = (): void => {
-        toggleCallback();
+        setGameMode(gameMode == GameModeTypes.REAL ? GameModeTypes.FUN : GameModeTypes.REAL)
     }
 
     return (

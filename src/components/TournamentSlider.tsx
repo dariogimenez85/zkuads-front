@@ -1,12 +1,12 @@
 import React from 'react'
 import useGetTournamentsData from '../hooks/useGetTournamentsData'
-import Card from './tournaments/Card'
+import TournamentCard from './tournaments/TournamentCard'
 
 const TournamentSlider = () => {
 
     const tournamentData = useGetTournamentsData();
     const tournamentList = tournamentData.tournaments.map((data) => {
-        return <Card key={data.name} data={data} />
+        return <TournamentCard key={data.name} data={data} />
     })
 
     return (

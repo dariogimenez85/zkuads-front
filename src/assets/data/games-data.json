@@ -1,6 +1,7 @@
 {
     "games": [
         {
+            "id": 1,
             "name": "Fruit Finder",
             "thumbnail": "fruitfinder.png",
             "header_pic": "fruitfinder.png",
@@ -52,6 +53,7 @@
             }
         },
         {
+            "id": 2,
             "name": "Tricky Bricks",
             "thumbnail": "trickybricks.png",
             "header_pic": "trickybricks.png",
@@ -103,6 +105,7 @@
             }
         },
         {
+            "id": 3,
             "name": "21 Blackjack",
             "thumbnail": "21blackjack.png",
             "header_pic": "21blackjack.png",
@@ -154,6 +157,7 @@
             }
         },
         {
+            "id": 4,
             "name": "Gems Blast",
             "thumbnail": "gemsblast.png",
             "header_pic": "gemsblast.png",

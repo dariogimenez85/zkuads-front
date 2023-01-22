@@ -1,12 +1,12 @@
 import React from 'react'
 import useGetGames from '../hooks/useGetGamesData'
-import Card from './games/Card';
+import GameCard from './games/GameCard';
 
 const GameList = () => {
 
     const gameData = useGetGames();
     const gameList = gameData.games.map((data) => {
-        return <Card key={data.name} data={data} />;
+        return <GameCard key={data.name} data={data} />;
     });
 
     return (

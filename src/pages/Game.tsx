@@ -1,10 +1,10 @@
-import Header from "../components/Header";
+import TopBar from "../components/TopBar";
 
 const Game = () => {
   return (
     <div className="portrait-container">
       <div className="bg-dark">
-        <Header showBackButton={true} />
+        <TopBar showBackButton={true} />
 
         <header className="game-header">
           {/* <!-- bg-img on style --> */}
