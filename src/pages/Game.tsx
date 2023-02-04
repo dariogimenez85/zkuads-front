@@ -4,7 +4,7 @@ const Game = () => {
   return (
     <div className="portrait-container">
       <div className="bg-dark">
-        <Header showBackButton={false} />
+        <Header showBackButton={true} />
 
         <header className="game-header">
           {/* <!-- bg-img on style --> */}
