@@ -1,0 +1,36 @@
+.radio-label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    margin: 2rem auto;
+
+    label{
+        flex: 1 0 0;
+        padding: 1rem;
+        border-bottom: 2px solid transparent;
+        font-size: 1.6rem;
+        font-family: "Quicksand Medium";
+        color: #fff;
+        text-align: center;
+        text-transform: capitalize;
+        cursor: pointer;
+        transition: all .3s ease-out;
+    }
+
+    input{
+        display: none;
+    }
+}
+
+
+
+input.radio-option-1[type="radio"]:checked ~ .label-option-1{
+    border-bottom: 2px solid #ffce24;
+}
+input.radio-option-2[type="radio"]:checked ~ .label-option-2{
+    border-bottom: 2px solid #ffce24;
+}
+input.radio-option-3[type="radio"]:checked ~ .label-option-3{
+    border-bottom: 2px solid #ffce24;
+}
