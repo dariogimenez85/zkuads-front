@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import useGetUserData from '../hooks/useGetUserData'
-import { GameModeTypes } from '../redux/slices/gameConfigSlice';
+import { GameModeTypes } from '../redux/slices/configSlice';
 import BackButton from './header/BackButton'
 import CoinSwitch from './header/CoinSwitch'
 import PowCoinBalance from './header/PowCoinBalance'
@@ -13,7 +13,7 @@ const TopBar = ({ showBackButton }: { showBackButton: boolean }) => {
 
     const userData = useGetUserData();
 
-    const gameMode = useSelector((state: any) => state.gameConfig.gameMode);
+    const gameMode = useSelector((state: any) => state.config.gameMode);
     const [bgStyle, setBgStyle] = useState('');
 
     useEffect(() => {

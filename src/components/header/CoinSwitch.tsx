@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
-import { setGameMode } from '../../redux/slices/gameConfigSlice';
-import { GameModeTypes } from '../../redux/slices/gameConfigSlice';
+import { setGameMode } from '../../redux/slices/configSlice';
+import { GameModeTypes } from '../../redux/slices/configSlice';
 
 
 const CoinSwitch = () => {
 
-    const gameMode = useSelector((state: any) => state.gameConfig.gameMode);
+    const gameMode = useSelector((state: any) => state.config.gameMode);
     const dispatch = useDispatch();
     const [imgType, setImgType] = useState('');
 

@@ -9,8 +9,8 @@ const initialState = {
     gameMode: GameModeTypes.FUN
 }
 
-export const gameModeSlice = createSlice({
-    name: 'gameConfig',
+export const configSlice = createSlice({
+    name: 'config',
     initialState,
     reducers: {
         setGameMode: (state: any, value) => {
@@ -19,5 +19,5 @@ export const gameModeSlice = createSlice({
     }
 });
 
-export const { setGameMode } = gameModeSlice.actions;
-export default gameModeSlice.reducer;
+export const { setGameMode } = configSlice.actions;
+export default configSlice.reducer;

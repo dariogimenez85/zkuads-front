@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
-import { GameModeTypes } from '../../redux/slices/gameConfigSlice';
+import { GameModeTypes } from '../../redux/slices/configSlice';
 
 const SelectedCoinBalance = ({ balance }: { balance: any }) => {
 
-    const gameMode = useSelector((state: any) => state.gameConfig.gameMode);
+    const gameMode = useSelector((state: any) => state.config.gameMode);
     const [balanceValue, setBalanceValue] = useState(0);
     const [imgType, setImgType] = useState('');
 
