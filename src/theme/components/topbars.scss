@@ -23,8 +23,11 @@
     &__back{
         margin-right: 10px;
         background: transparent;
-        border: 0px;
+        border: 0px;        
+        display: flex;
         cursor: pointer;
+        align-items: center;
+        
         &--img{
             width: 2.5rem;
         }
