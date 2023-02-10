@@ -9,7 +9,8 @@ const SelectedCoinBalance = ({ balance }: { balance: any }) => {
     const [imgType, setImgType] = useState('');
 
     useEffect(() => {
-        setBalanceValue(gameMode.payload == GameModeTypes.REAL ? balance.z_coin : balance.diamond);
+
+        setBalanceValue(gameMode.payload == GameModeTypes.REAL ? balance.hard : balance.soft);
         setImgType(gameMode.payload == GameModeTypes.REAL ? '/src/assets/svg/icon_coin.svg' : '/src/assets/svg/icon_diamond.svg');
     }, [gameMode]);
 

@@ -8,15 +8,15 @@ import PowCoinBalance from './header/PowCoinBalance'
 import SelectedCoinBalance from './header/SelectedCoinBalance'
 import UserPic from './header/UserPic'
 
-
 const TopBar = ({ showBackButton }: { showBackButton: boolean }) => {
 
-    const userData = useGetUserData();
-
+    const userData = useSelector((state: any) => state.user);
     const gameMode = useSelector((state: any) => state.config.gameMode);
     const [bgStyle, setBgStyle] = useState('');
 
     useEffect(() => {
+        console.log(userData.balance);
+
         setBgStyle(gameMode.payload == GameModeTypes.REAL ? 'bg-orange-blur' : 'bg-purple-blur');
 
     }, [gameMode]);
@@ -27,8 +27,8 @@ const TopBar = ({ showBackButton }: { showBackButton: boolean }) => {
                 <BackButton show={showBackButton} />
                 <CoinSwitch />
                 <SelectedCoinBalance balance={userData.balance} />
-                <PowCoinBalance balance={userData.balance.pow_coin} />
-                <UserPic path={userData.pic} />
+                <PowCoinBalance balance={userData.balance.special} />
+                <UserPic path={userData.picture} />
             </div>
         </div>
     )
