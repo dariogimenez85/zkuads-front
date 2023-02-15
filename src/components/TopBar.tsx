@@ -9,7 +9,6 @@ import UserPic from './topbar/UserPic'
 
 const TopBar = ({ showBackButton }: { showBackButton: boolean }) => {
 
-    const userData = useAppSelector((state) => state.user);
     const gameConfig = useAppSelector((state) => state.config);
     const [bgStyle, setBgStyle] = useState('');
 
@@ -23,9 +22,9 @@ const TopBar = ({ showBackButton }: { showBackButton: boolean }) => {
             <div className={`topbar ${bgStyle}`}>
                 <BackButton show={showBackButton} />
                 <CoinSwitch />
-                <SelectedCoinBalance balance={userData.user.balance} />
-                <PowCoinBalance balance={userData.user.balance.special} />
-                <UserPic path={userData.user.picture} />
+                <SelectedCoinBalance />
+                <PowCoinBalance />
+                <UserPic />
             </div>
         </div>
     )
