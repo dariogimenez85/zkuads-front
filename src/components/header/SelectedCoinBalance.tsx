@@ -1,18 +1,19 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import { GameModeTypes } from '../../redux/slices/configSlice';
+import { useAppSelector } from '../../redux/store';
 
 const SelectedCoinBalance = ({ balance }: { balance: any }) => {
 
-    const gameMode = useSelector((state: any) => state.config.gameMode);
+    const gameConfig = useAppSelector((state: any) => state.config);
     const [balanceValue, setBalanceValue] = useState(0);
     const [imgType, setImgType] = useState('');
 
     useEffect(() => {
 
-        setBalanceValue(gameMode.payload == GameModeTypes.REAL ? balance.hard : balance.soft);
-        setImgType(gameMode.payload == GameModeTypes.REAL ? '/src/assets/svg/icon_coin.svg' : '/src/assets/svg/icon_diamond.svg');
-    }, [gameMode]);
+        setBalanceValue(gameConfig.gameMode == GameModeTypes.REAL ? balance.hard : balance.soft);
+        setImgType(gameConfig.gameMode == GameModeTypes.REAL ? '/src/assets/svg/icon_coin.svg' : '/src/assets/svg/icon_diamond.svg');
+    }, [gameConfig.gameMode]);
 
     return (
         <div className="topbar__cash-mode">

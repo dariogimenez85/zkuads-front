@@ -14,7 +14,7 @@ export const configSlice = createSlice({
     initialState,
     reducers: {
         setGameMode: (state: any, value) => {
-            state.gameMode = value;
+            state.gameMode = value.payload;
         }
     }
 });
