@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { GameModeTypes } from '../redux/slices/configSlice';
 import { useAppSelector } from '../redux/store';
-import BackButton from './header/BackButton'
-import CoinSwitch from './header/CoinSwitch'
-import PowCoinBalance from './header/PowCoinBalance'
-import SelectedCoinBalance from './header/SelectedCoinBalance'
-import UserPic from './header/UserPic'
+import BackButton from './topbar/BackButton'
+import CoinSwitch from './topbar/CoinSwitch'
+import PowCoinBalance from './topbar/PowCoinBalance'
+import SelectedCoinBalance from './topbar/SelectedCoinBalance'
+import UserPic from './topbar/UserPic'
 
 const TopBar = ({ showBackButton }: { showBackButton: boolean }) => {
 

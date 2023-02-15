@@ -13,7 +13,7 @@ import PublicRoute from './routes/PublicRoute';
 import PrivateRoute from './routes/PrivateRoute';
 
 const App = () => {
-  // const { data, isLoading, isError, error } = useLoginQuery();
+  const { data, isLoading, isError, error } = useLoginQuery();
 
   return (
     <Suspense fallback={<div>Loading...</div>}>
